@@ -1,0 +1,3 @@
+/home/nuntius/Desktop/docu/markText/build/CMakeFiles/rebuild_cache.dir
+/home/nuntius/Desktop/docu/markText/build/CMakeFiles/edit_cache.dir
+/home/nuntius/Desktop/docu/markText/build/CMakeFiles/marktext.dir

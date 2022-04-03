@@ -1,0 +1,9 @@
+#DIV(test:mermaid){}
+#LST(list_id:lst_class){}
+CSS(css_link){}
+#LNK(link_id:lnk_class){}
+JSS(js_src){}
+#TBL(table_id:tbl_class){}
+
+
+#HDD(head:hcl){2:just a test}

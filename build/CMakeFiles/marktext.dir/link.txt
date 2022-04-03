@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/marktext.dir/src/md_parser.cpp.o -o bin/marktext 
