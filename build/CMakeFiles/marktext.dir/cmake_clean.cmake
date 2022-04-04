@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/marktext.dir/src/head.cpp.o"
   "CMakeFiles/marktext.dir/src/md_parser.cpp.o"
   "bin/marktext"
   "bin/marktext.pdb"

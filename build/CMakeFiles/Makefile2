@@ -93,12 +93,12 @@ clean: CMakeFiles/marktext.dir/clean
 CMakeFiles/marktext.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuntius/Desktop/docu/markText/build/CMakeFiles --progress-num=1,2 "Built target marktext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuntius/Desktop/docu/markText/build/CMakeFiles --progress-num=1,2,3 "Built target marktext"
 .PHONY : CMakeFiles/marktext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/marktext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuntius/Desktop/docu/markText/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuntius/Desktop/docu/markText/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/marktext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuntius/Desktop/docu/markText/build/CMakeFiles 0
 .PHONY : CMakeFiles/marktext.dir/rule

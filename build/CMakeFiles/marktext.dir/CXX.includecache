@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/nuntius/Desktop/docu/markText/src/head.hpp
+string
+-
+
 /home/nuntius/Desktop/docu/markText/src/md_parser.cpp
 iostream
 -
@@ -13,4 +17,6 @@ fstream
 -
 vector
 -
+head.hpp
+/home/nuntius/Desktop/docu/markText/src/head.hpp
 

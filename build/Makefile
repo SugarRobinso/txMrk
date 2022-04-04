@@ -142,6 +142,33 @@ marktext/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/build
 .PHONY : marktext/fast
 
+src/head.o: src/head.cpp.o
+
+.PHONY : src/head.o
+
+# target to build an object file
+src/head.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/src/head.cpp.o
+.PHONY : src/head.cpp.o
+
+src/head.i: src/head.cpp.i
+
+.PHONY : src/head.i
+
+# target to preprocess a source file
+src/head.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/src/head.cpp.i
+.PHONY : src/head.cpp.i
+
+src/head.s: src/head.cpp.s
+
+.PHONY : src/head.s
+
+# target to generate assembly for a file
+src/head.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marktext.dir/build.make CMakeFiles/marktext.dir/src/head.cpp.s
+.PHONY : src/head.cpp.s
+
 src/md_parser.o: src/md_parser.cpp.o
 
 .PHONY : src/md_parser.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... marktext"
+	@echo "... src/head.o"
+	@echo "... src/head.i"
+	@echo "... src/head.s"
 	@echo "... src/md_parser.o"
 	@echo "... src/md_parser.i"
 	@echo "... src/md_parser.s"

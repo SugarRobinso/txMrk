@@ -2,6 +2,8 @@
 #include <fstream>
 #include <vector>
 
+#include "head.hpp"
+
 enum OBJ {
 	DIV, // div
 	HDD, // head
@@ -99,26 +101,7 @@ void ext_src(const std::string& line, std::vector<std::string>& container) {
 
 
 
-class head {
-private:
-	int size;
-	std::string content="";
-public:
-	// head();
 
-	void set_info(int sz, std::string cnt) {
-		this->size = sz;
-		this->content = cnt;
-	}
-
-	int get_info_size() {
-		return this->size;
-	}
-
-	std::string get_info_content() {
-		return this->content;
-	}
-};
 
 int main(int argc, char* argv[]) {
 
@@ -184,6 +167,7 @@ int main(int argc, char* argv[]) {
 					hd.set_info(std::stoi(obj_body.substr(0, obj_body.find(':'))), obj_body.substr(obj_body.find(':') + 1, obj_body.length() - obj_body.find(':') + 1));
 					std::cout << hd.get_info_size() << std::endl;
 					std::cout << hd.get_info_content() << std::endl;
+					std::cout << "PORCO ZEUS FUNZIONA !" << std::endl;
 					// std::cout << obj_body.substr(0, obj_body.find(':')) << std::endl;
 					// std::cout << obj_body.substr(obj_body.find(':') + 1, obj_body.length() - obj_body.find(':') + 1) << std::endl;
 					mkText_O_f << "";

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/marktext.dir/src/md_parser.cpp.o -o bin/marktext 
+/usr/bin/c++ CMakeFiles/marktext.dir/src/md_parser.cpp.o CMakeFiles/marktext.dir/src/head.cpp.o -o bin/marktext 

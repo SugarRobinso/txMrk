@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/nuntius/Desktop/docu/markText/src/head.cpp" "/home/nuntius/Desktop/docu/markText/build/CMakeFiles/marktext.dir/src/head.cpp.o"
   "/home/nuntius/Desktop/docu/markText/src/md_parser.cpp" "/home/nuntius/Desktop/docu/markText/build/CMakeFiles/marktext.dir/src/md_parser.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
