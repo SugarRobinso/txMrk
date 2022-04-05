@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "head.hpp"
+#include "parser.hpp"
 
 enum OBJ {
 	DIV, // div
@@ -114,21 +115,16 @@ int main(int argc, char* argv[]) {
 
 	std::string filename = argv[1];
 
-	std::ifstream mkText_I_f;
-	mkText_I_f.open(filename, std::fstream::in);
-
-	std::ofstream mkText_O_f;
-	mkText_O_f.open(filename.replace(filename.length() - 3, 3, "html"), std::fstream::trunc);
-
 	std::string ln;
 	std::vector<std::string> css_links;
 	std::vector<std::string> js_scripts;
 	std::vector<std::string> obj_collection;
 
-	mkText_O_f << "<!DOCTYPE html>\n";
-	mkText_O_f << "<html>\n";
+	// mkText_O_f << "<!DOCTYPE html>\n";
+	// mkText_O_f << "<html>\n";
 
-	head hd;
+	Head hd;
+	Parser psr;
 
 	while (std::getline(mkText_I_f, ln)) {
 		int counter=0;
@@ -170,7 +166,7 @@ int main(int argc, char* argv[]) {
 					std::cout << "PORCO ZEUS FUNZIONA !" << std::endl;
 					// std::cout << obj_body.substr(0, obj_body.find(':')) << std::endl;
 					// std::cout << obj_body.substr(obj_body.find(':') + 1, obj_body.length() - obj_body.find(':') + 1) << std::endl;
-					mkText_O_f << "";
+					// mkText_O_f << "";
 					break;
 				case LST:
 					break;
@@ -194,27 +190,27 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
-	mkText_O_f << "\t<head>\n";
+	// mkText_O_f << "\t<head>\n";
 
-	for (int i = 0; i < css_links.size(); i++) {
-		mkText_O_f << "\t\t" << "<link rel=\"stylesheet\" href=\"" << css_links[i] << "\">" << "\n";
-	}
+	// for (int i = 0; i < css_links.size(); i++) {
+	// 	mkText_O_f << "\t\t" << "<link rel=\"stylesheet\" href=\"" << css_links[i] << "\">" << "\n";
+	// }
 	
 
-	mkText_O_f << "\t</head>\n";
-	mkText_O_f << "\t<body>\n";
-	mkText_O_f << "\t\tMinchia sono un Dio !\n";
+	// mkText_O_f << "\t</head>\n";
+	// mkText_O_f << "\t<body>\n";
+	// mkText_O_f << "\t\tMinchia sono un Dio !\n";
 
-	for (int i = 0; i < obj_collection.size(); i++) {
-		mkText_O_f << obj_collection[i] << "\n";
-	}
+	// for (int i = 0; i < obj_collection.size(); i++) {
+	// 	mkText_O_f << obj_collection[i] << "\n";
+	// }
 
-	for (int i = 0; i < js_scripts.size(); i++) {
-		mkText_O_f << "\t\t" << "<script type=\"text/javascript\" src=\"" << js_scripts[i] << "\"></script>\n";
-	}
+	// for (int i = 0; i < js_scripts.size(); i++) {
+	// 	mkText_O_f << "\t\t" << "<script type=\"text/javascript\" src=\"" << js_scripts[i] << "\"></script>\n";
+	// }
 
-	mkText_O_f << "\t</body>\n";
-	mkText_O_f << "</html>\n";
+	// mkText_O_f << "\t</body>\n";
+	// mkText_O_f << "</html>\n";
 
 	return 0;
 }

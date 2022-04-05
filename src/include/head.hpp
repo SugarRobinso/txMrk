@@ -3,7 +3,7 @@
 
 #include <string>
 
-class head {
+class Head {
 private:
 	int size;
 	std::string content="";
